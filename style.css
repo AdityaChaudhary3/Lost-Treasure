@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-color: bisque;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+li{
+    border: 2px solid black;
+    margin: 10px 25px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    /* background-color: black; */
+    /* height: 50vh; */
+    /* width: 50vh; */
+    justify-content: center;
+}
+
+.puzzle{
+    background-color: rgb(184, 202, 184);
+    height: 60vh;
+    width: 40vw;
+    margin: 11vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+button{
+    height: 15vh;
+    width: 10vw;
+    background-color: rgb(158, 44, 139);
+    justify-self: center;
+    align-self: center;
+    color: blanchedalmond;
+    text-align: center;
+    cursor: pointer;
+}
