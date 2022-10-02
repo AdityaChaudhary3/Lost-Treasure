@@ -1,7 +1,6 @@
 body {
     height: 100%;
     margin:0;
-    overflow: clip;
     width: 100%;
 }
 
@@ -41,7 +40,7 @@ main {
     gap:5px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    margin-top:55px;
+    margin-top:60px;
     padding:12px;
     max-height: 400px;
 }
@@ -94,8 +93,8 @@ main {
     
     .chest {
         font-size: 16px;
-        padding: 20px 25px;
-        margin:10px;
+        padding: 12px 15px;
+        margin:2px;
     }
     
     h1 {
@@ -104,8 +103,8 @@ main {
     }
 
     .puzzle {
-        max-height:350px;
-        padding:10px;
+        max-height:275px;
+        padding:5px;
     }
 }
 
