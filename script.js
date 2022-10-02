@@ -1,4 +1,4 @@
-//alert("savdhan");
+//Once I know how I'll try to get the chest to move around randomly.
 
 let box1 = document.getElementById("Box1")
 box1.addEventListener('click',function run(){
