@@ -1,4 +1,4 @@
-alert("savdhan");
+//alert("savdhan");
 
 let box1 = document.getElementById("Box1")
 box1.addEventListener('click',function run(){
