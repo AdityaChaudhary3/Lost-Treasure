@@ -1,10 +1,28 @@
-*{
-    margin: 0;
-    padding: 0;
+body {
+    height: 100%;
+    margin:0;
+    overflow: clip;
+    width: 100%;
 }
 
-.main{
+h1 {
+    background-color:#D7CABC;
+    box-shadow: 0px 0px 5px 0.5px #23001E;
+    color: #23001E;
+    font-family: "chelsea market";
+    font-size:18px;
+    letter-spacing: 15px;
+    padding:9px 13px;
+    min-width:230px;
+    width:fit-content;
+}
+
+header{
     background-color: bisque;
+    display:flex;
+    justify-content: center;
+    padding: 12px;
+    text-align: center;
 }
 
 ul{
@@ -22,29 +40,56 @@ li{
 
 .container{
     display: flex;
-    /* background-color: black; */
-    /* height: 50vh; */
-    /* width: 50vh; */
+    background: linear-gradient(180deg, bisque 20%, turquoise 50%);
+    height: 100vh;
+    width: 100%;
     justify-content: center;
 }
 
 .puzzle{
     background-color: rgb(184, 202, 184);
-    height: 60vh;
-    width: 40vw;
-    margin: 11vh;
+    border-radius: 3px;;
+    box-shadow: 0px 0px 2px 0.5px rgb(184, 202, 184);
     display: grid;
+    height: 60vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    margin: 11vh;
+    min-width:300px;
+    width: 40vw;
 }
 
 button{
-    height: 15vh;
-    width: 10vw;
-    background-color: rgb(158, 44, 139);
-    justify-self: center;
     align-self: center;
-    color: blanchedalmond;
-    text-align: center;
+    background: repeating-linear-gradient(tan, tan 9.6%, black 10%, tan 10.4%), tan;
+    border:1.5px solid burlywood;
+    border-radius:3px;
+    box-shadow: 0px 0px 3px 0.5px #23001E;
+    color: gold;
     cursor: pointer;
+    font-family: "cochin";
+    font-size:16.5px;
+    font-weight:bolder;
+    height: 15vh;
+    justify-self: center;
+    min-width:75px;
+    text-align: center;
+    text-shadow:0px 0px 2px #23001E;
+    width: 10vw;
+}
+
+@media (max-width: 600px) {
+    
+    h1 {
+        font-size:16px;
+        letter-spacing: 8px;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    button {
+        font-size: 20px;
+    }
+    
 }
