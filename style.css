@@ -12,8 +12,8 @@ h1 {
     font-family: "chelsea market";
     font-size:18px;
     letter-spacing: 15px;
-    padding:9px 13px;
-    min-width:230px;
+    padding:10px 15px;
+    min-width:260px;
     width:fit-content;
 }
 
@@ -25,20 +25,7 @@ header{
     text-align: center;
 }
 
-ul{
-    display: flex;
-    list-style: none;
-    justify-content: center;
-}
-
-li{
-    border: 2px solid black;
-    margin: 10px 25px;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-
-.container{
+main {
     display: flex;
     background: linear-gradient(180deg, bisque 20%, turquoise 50%);
     height: 100vh;
@@ -46,50 +33,79 @@ li{
     justify-content: center;
 }
 
-.puzzle{
+.puzzle {
     background-color: rgb(184, 202, 184);
-    border-radius: 3px;;
+    border-radius: 3px;
     box-shadow: 0px 0px 2px 0.5px rgb(184, 202, 184);
-    display: grid;
-    height: 60vh;
+    display:grid;
+    gap:5px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    margin: 11vh;
-    min-width:300px;
-    width: 40vw;
+    margin-top:55px;
+    padding:12px;
+    max-height: 400px;
 }
 
-button{
+.chest {
     align-self: center;
-    background: repeating-linear-gradient(tan, tan 9.6%, black 10%, tan 10.4%), tan;
+    background: linear-gradient(
+    transparent 40%, saddlebrown, black 42%, black 43%, transparent 45%),
+    repeating-linear-gradient(tan, tan 9.6%, black 10%, tan 10.4%);
     border:1.5px solid burlywood;
     border-radius:3px;
     box-shadow: 0px 0px 3px 0.5px #23001E;
     color: gold;
     cursor: pointer;
     font-family: "cochin";
-    font-size:16.5px;
+    font-size:20px;
     font-weight:bolder;
-    height: 15vh;
     justify-self: center;
-    min-width:75px;
+    margin:12px;
+    padding:25px 30px;
     text-align: center;
     text-shadow:0px 0px 2px #23001E;
-    width: 10vw;
 }
 
-@media (max-width: 600px) {
+.chest:hover {
+    background: linear-gradient(
+    transparent 15%, goldenrod 38%, saddlebrown 39%, black 40%, gold 50%, goldenrod 60%, transparent 72%),
+    repeating-linear-gradient(tan, tan 9.6%, black 10%, tan 10.4%);
+    text-shadow:0px 0px 2px darkgoldenrod;
+}
+
+@media (max-width: 1000px) {
+
+    .chest {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size:17px;
+        letter-spacing: 14px;
+    }
+
+    .puzzle {
+        max-height:375px;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    
+    .chest {
+        font-size: 16px;
+        padding: 20px 25px;
+        margin:10px;
+    }
     
     h1 {
         font-size:16px;
-        letter-spacing: 8px;
+        letter-spacing: 10px;
+    }
+
+    .puzzle {
+        max-height:350px;
+        padding:10px;
     }
 }
 
-@media (min-width: 1000px) {
-
-    button {
-        font-size: 20px;
-    }
-    
-}
