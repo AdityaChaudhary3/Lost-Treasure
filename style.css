@@ -16,6 +16,14 @@ h1 {
     min-width:260px;
 }
 
+h1, .chest, .puzzle {
+    animation-name:wobble;
+    animation-duration:30s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-in;
+    transform-origin: 50% 100%;
+}
+
 main {
     align-items: center;
     display: flex;
@@ -30,7 +38,7 @@ main {
 
 .puzzle {
     background-color: rgb(184, 202, 184);
-    border-radius: 3px;
+    border-radius: 3px 3px 60px 60px;
     box-shadow: 0px 0px 2px 0.5px rgb(184, 202, 184);
     display:grid;
     gap:5px;
@@ -68,6 +76,23 @@ main {
     tan, tan 9.6%, black 10%, tan 10.4%);
     text-shadow:0px 0px 2px darkgoldenrod;
 }
+
+@keyframes wobble {
+
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform:rotate(1.5deg);
+    }
+    50% {
+        transform: rotate(-3deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 
 @media (max-width: 1000px) {
 
