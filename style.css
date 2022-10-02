@@ -1,7 +1,7 @@
 body {
-    height: 100%;
+    height: 100vh;
     margin:0;
-    width: 100%;
+    width: 100vw;
 }
 
 h1 {
@@ -21,8 +21,8 @@ main {
     display: flex;
     background: linear-gradient(180deg, bisque 20%, turquoise 50%);
     flex-direction: column;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     justify-content: center;
     text-align: center;
 }
