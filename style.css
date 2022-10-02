@@ -62,7 +62,7 @@ main {
 
 .chest:hover {
     background: linear-gradient(
-    transparent 15%, goldenrod 38%, saddlebrown 39%, black 40%, gold 50%, goldenrod 60%, transparent 72%),
+    transparent 10%, goldenrod 30%, saddlebrown 31%, black 32%, gold 40%, gold 43%, goldenrod 50%, transparent 72%),
     repeating-linear-gradient(tan, tan 9.6%, black 10%, tan 10.4%);
     text-shadow:0px 0px 2px darkgoldenrod;
 }
