@@ -43,7 +43,7 @@ main {
 .chest {
     align-self: center;
     background: linear-gradient(
-    transparent 40%, saddlebrown, black 42%, black 43%, transparent 45%),
+    transparent 40%, saddlebrown, black 42%, black 43%, transparent 43%),
     repeating-linear-gradient(tan, tan 9.6%, black 10%, tan 10.4%);
     border:1.5px solid burlywood;
     border-radius:3px;
