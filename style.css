@@ -148,21 +148,36 @@ main {
         letter-spacing: 14px;
     }
 
+    main {
+        min-height: 125vh;
+        min-width: 125vw;
+    }
+    
     .puzzle {
         max-height:375px;
     }
 
     .ship-left {
+        border-left:solid 4em transparent;
         border-top:solid 295px rgb(184, 202, 184);
+        left:-63px;
     }
 
     .ship-right {
+        border-right:solid 4em transparent;
         border-top:solid 295px rgb(184, 202, 184);
+        right:-63px;
     }
     
+    .ship-bottom {
+        border-left: solid 9em transparent;
+        border-right: solid 9em transparent;
+        bottom:28px;
+        left:75px;
+    }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
 
     body {
         overflow: hidden;
@@ -185,11 +200,22 @@ main {
     }
 
     .ship-left {
+        border-left:solid 3em transparent;
         border-top:solid 250px rgb(184, 202, 184);
+        left:-47px;
     }
 
     .ship-right {
+        border-right:solid 3em transparent;
         border-top:solid 250px rgb(184, 202, 184);
+        right:-47px;
+    }
+
+    .ship-bottom {
+        border-left: solid 7em transparent;
+        border-right: solid 7em transparent;
+        bottom:29px;
+        left:65px;
     }
 }
 
