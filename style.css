@@ -61,8 +61,8 @@ main {
     background: linear-gradient(180deg, 
     bisque 20%, turquoise 50%, turquoise 83%, mediumturquoise 93%, darkturquoise 98%);
     flex-direction: column;
-    min-height: 110vh;
-    width: 100%;
+    min-height: 150vh;
+    min-width: 100vw;
     justify-content: center;
     text-align: center;
 }
@@ -81,7 +81,7 @@ main {
 
 .ship {
     position:absolute;
-    top:22%;
+    top:10rem;
 }
 
 .ship-bottom {
