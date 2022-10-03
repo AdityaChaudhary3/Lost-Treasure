@@ -62,8 +62,8 @@ main {
     flex-direction: column;
     height: 100vh;
     min-height: 665px;
-    width: 100vw;
-    min-width:490px;
+    min-width: 100vw;
+    /* min-width:480px; */
     justify-content: center;
     text-align: center;
 }
@@ -173,7 +173,7 @@ main {
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 500px) {
 
     .chest {
         font-size: 16px;
