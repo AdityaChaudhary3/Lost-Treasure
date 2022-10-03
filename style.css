@@ -154,15 +154,15 @@ main {
     }
 
     .ship-left {
-        border-left:solid 4em transparent;
+        border-left:solid 3.8em transparent;
         border-top:solid 295px rgb(184, 202, 184);
-        left:-63px;
+        left:-59px;
     }
 
     .ship-right {
-        border-right:solid 4em transparent;
+        border-right:solid 3.8em transparent;
         border-top:solid 295px rgb(184, 202, 184);
-        right:-63px;
+        right:-59px;
     }
     
     .ship-bottom {
@@ -173,7 +173,7 @@ main {
     }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 585px) {
 
     body {
         overflow: hidden;
