@@ -149,8 +149,8 @@ main {
     }
 
     main {
-        min-height: 125vh;
-        min-width: 125vw;
+        min-height: 110vh;
+        min-width: 110vw;
     }
     
     .puzzle {
