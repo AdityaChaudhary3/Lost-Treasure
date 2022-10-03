@@ -175,10 +175,6 @@ main {
 }
 
 @media (max-width: 500px) {
-    
-    body {
-        overflow: hidden;
-    }
 
     .chest {
         font-size: 16px;
