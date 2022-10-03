@@ -173,7 +173,7 @@ main {
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 575px) {
 
     body {
         overflow: hidden;
