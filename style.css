@@ -22,7 +22,7 @@ body {
     padding:25px 30px;
     text-align: center;
     text-shadow:0px 0px 2px #23001E;
-    transition: 2s ease-in-out 0ms;
+    transition: 5s ease-in-out 1000ms;
 }
 
 .chest:hover {
@@ -42,9 +42,10 @@ h1 {
     font-size:18px;
     letter-spacing: 15px;
     padding:10px 15px;
-    min-width:260px;
+    min-width:280px;
     position:absolute;
     top:3rem;
+    transition: 5s ease-in-out 1000ms;
 }
 
 h1, .chest, .ship {
@@ -65,7 +66,6 @@ main {
     height: 100vh;
     min-height: 665px;
     min-width: 100vw;
-    /* min-width:480px; */
     justify-content: center;
     text-align: center;
 }
@@ -95,6 +95,7 @@ main {
     position:absolute;
     bottom: -24px;
     left:85px;
+    transition: 5s ease-in-out 1000ms;
 }
 
 .ship-left {
@@ -105,6 +106,7 @@ main {
     left:-78px;
     top:50px;
     position:absolute;
+    transition: 5s ease-in-out 1000ms;
 }
 
 .ship-right {
@@ -115,6 +117,7 @@ main {
     right:-78px;
     top:50px;
     position:absolute;
+    transition: 5s ease-in-out 1000ms;
 }
 
 
