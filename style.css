@@ -4,51 +4,6 @@ body {
     width: 100%;
 }
 
-h1 {
-    background-color:#D7CABC;
-    box-shadow: 0px 0px 5px 0.5px #23001E;
-    color: #23001E;
-    font-family: "chelsea market";
-    font-size:18px;
-    letter-spacing: 15px;
-    padding:10px 15px;
-    margin:50px 0;
-    min-width:260px;
-}
-
-h1, .chest, .puzzle {
-    animation-name:wobble;
-    animation-duration:30s;
-    animation-iteration-count:infinite;
-    animation-timing-function: ease-in;
-    transform-origin: 50% 100%;
-}
-
-main {
-    align-items: center;
-    display: flex;
-    background: linear-gradient(180deg, 
-    bisque 20%, turquoise 50%, turquoise 83%, mediumturquoise 93%, darkturquoise 98%);
-    flex-direction: column;
-    min-height: 100vh;
-    min-width: 100vw;
-    justify-content: center;
-    text-align: center;
-}
-
-.puzzle {
-    background-color: rgb(184, 202, 184);
-    border-radius: 3px 3px 60px 60px;
-    box-shadow: 0px 0px 2px 0.5px rgb(184, 202, 184);
-    display:grid;
-    gap:5px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    padding:12px;
-    margin:50px 0;
-    max-height: 400px;
-}
-
 .chest {
     align-self: center;
     background: linear-gradient(180deg, 
@@ -77,16 +32,102 @@ main {
     text-shadow:0px 0px 2px darkgoldenrod;
 }
 
+h1 {
+    background-color:#D7CABC;
+    box-shadow: 0px 0px 5px 0.5px #23001E;
+    color: #23001E;
+    font-family: "chelsea market";
+    font-size:18px;
+    letter-spacing: 15px;
+    padding:10px 15px;
+    margin:50px 0;
+    min-width:260px;
+    position:absolute;
+    top:0;
+}
+
+h1, .chest, .ship {
+    animation-name:wobble;
+    animation-duration:15s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: 50% 100%;
+}
+
+main {
+    align-items: center;
+    clear:both;
+    display: flex;
+    background: linear-gradient(180deg, 
+    bisque 20%, turquoise 50%, turquoise 83%, mediumturquoise 93%, darkturquoise 98%);
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+    justify-content: center;
+    text-align: center;
+}
+
+.puzzle {
+    background:linear-gradient(180deg, rgb(184, 202, 184) 85%, rgb(157, 175, 157));
+    border-radius: 0px 0px 60px 60px;
+    display:grid;
+    gap:5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding:12px;
+    margin:50px 0;
+    max-height: 400px;
+}
+
+.ship {
+    position:absolute;
+    top:120px;
+}
+
+.ship-bottom {
+    border-top: solid 1.5em rgb(157, 175, 157);
+    border-left: solid 10em transparent;
+    border-right: solid 10em transparent;
+    height:0;
+    position:absolute;
+    bottom:26px;
+    left:85px;
+}
+
+.ship-left {
+    border-left:solid 5em transparent;
+    border-top:solid 350px rgb(184, 202, 184);
+    border-radius: 10px 0px 0px 0px;
+    height:0;
+    left:-78px;
+    top:50px;
+    position:absolute;
+}
+
+.ship-right {
+    border-radius: 0px 10px 0px 0px;
+    border-right:solid 5em transparent;
+    border-top:solid 350px rgb(184, 202, 184);
+    height:0;
+    right:-78px;
+    top:50px;
+    position:absolute;
+}
+
+
 @keyframes wobble {
 
     0% {
         transform: rotate(0deg);
     }
     25% {
-        transform:rotate(1.5deg);
+        transform:rotate(2deg);
     }
     50% {
-        transform: rotate(-3deg);
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-2deg);
     }
     100% {
         transform: rotate(0deg);
@@ -110,10 +151,22 @@ main {
     .puzzle {
         max-height:375px;
     }
+
+    .ship-left {
+        border-top:solid 295px rgb(184, 202, 184);
+    }
+
+    .ship-right {
+        border-top:solid 295px rgb(184, 202, 184);
+    }
     
 }
 
 @media (max-width: 500px) {
+
+    body {
+        overflow: hidden;
+    }
     
     .chest {
         font-size: 16px;
@@ -129,6 +182,14 @@ main {
     .puzzle {
         max-height:350px;
         padding:10px;
+    }
+
+    .ship-left {
+        border-top:solid 250px rgb(184, 202, 184);
+    }
+
+    .ship-right {
+        border-top:solid 250px rgb(184, 202, 184);
     }
 }
 
