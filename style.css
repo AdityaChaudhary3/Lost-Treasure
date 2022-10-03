@@ -61,8 +61,8 @@ main {
     background: linear-gradient(180deg, 
     bisque 20%, turquoise 50%, turquoise 83%, mediumturquoise 93%, darkturquoise 98%);
     flex-direction: column;
-    min-height: 100vh;
-    min-width: 100vw;
+    min-height: 100%;
+    min-width: 100%;
     justify-content: center;
     text-align: center;
 }
@@ -146,11 +146,6 @@ main {
     h1 {
         font-size:17px;
         letter-spacing: 14px;
-    }
-
-    main {
-        min-height: 110vh;
-        min-width: 110vw;
     }
     
     .puzzle {
