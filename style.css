@@ -40,10 +40,9 @@ h1 {
     font-size:18px;
     letter-spacing: 15px;
     padding:10px 15px;
-    margin:50px 0;
     min-width:260px;
     position:absolute;
-    top:0;
+    top:3rem;
 }
 
 h1, .chest, .ship {
@@ -77,7 +76,7 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     padding:12px;
-    margin:50px 0;
+    margin-top:50px;
     max-height: 400px;
 }
 
@@ -92,7 +91,6 @@ main {
     border-right: solid 10em transparent;
     height:0;
     position:absolute;
-    bottom:27px;
     left:85px;
 }
 
@@ -169,7 +167,6 @@ main {
     .ship-bottom {
         border-left: solid 9em transparent;
         border-right: solid 9em transparent;
-        bottom:28px;
         left:75px;
     }
 }
@@ -207,7 +204,6 @@ main {
     .ship-bottom {
         border-left: solid 7em transparent;
         border-right: solid 7em transparent;
-        bottom:29px;
         left:65px;
     }
 }
