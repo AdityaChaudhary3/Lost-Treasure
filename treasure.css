@@ -227,6 +227,10 @@ main {
 
 @media (max-width: 585px) {
 
+    body {
+        overflow: clip;
+    }
+
     .chest {
         font-size: 16px;
         padding: 18px;
