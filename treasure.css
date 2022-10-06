@@ -48,7 +48,7 @@ h1 {
     transition: 5s ease-in-out 1000ms;
 }
 
-h1, .chest, .ship {
+h1, .chest, .lose, .ship {
     animation-name:wobble;
     animation-duration:15s;
     animation-iteration-count:infinite;
@@ -56,13 +56,8 @@ h1, .chest, .ship {
     transform-origin: 50% 100%;
 }
 
-.win, .lose {
-    align-items: center;
-    display:flex;
-    font-weight: bolder;
-    justify-content: center;
-    position: absolute;
-    z-index:1;
+.hide {
+    visibility:hidden;
 }
 
 .lose {
@@ -75,24 +70,17 @@ h1, .chest, .ship {
     height:365px;
     margin-top:150px;
     text-shadow: 0px 0px 5px navy;
+    transition: 5s ease-in-out 500ms;
     width:500px;
 }
 
-.win {
-    background-image: url("img/treasure.jpeg") ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color:gold;
-    font-family: "snell roundhand", "luminari";
-    font-size:50px;
-    min-height: 100vh;
-    min-width:100vw;
-    text-shadow: 0px 0px 5px black;
-}
-
-.hide {
-    visibility:hidden;
+.lose, .win {
+    align-items: center;
+    display:flex;
+    font-weight: bolder;
+    justify-content: center;
+    position: absolute;
+    z-index:1;
 }
 
 main {
@@ -159,6 +147,19 @@ main {
     transition: 5s ease-in-out 1000ms;
 }
 
+.win {
+    background-image: url("img/treasure.jpeg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:gold;
+    font-family: "snell roundhand", "luminari";
+    font-size:50px;
+    min-height: 100vh;
+    min-width:100vw;
+    text-shadow: 0px 0px 5px black;
+}
+
 
 @keyframes wobble {
 
@@ -193,8 +194,22 @@ main {
         letter-spacing: 14px;
     }
     
+    .lose {
+        font-size:40px;
+        height:325px;
+        margin-top:100px;
+        width:425px;
+    }
+
     .puzzle {
         max-height:375px;
+    }
+    
+    .ship-bottom {
+        border-left: solid 9em transparent;
+        border-right: solid 9em transparent;
+        bottom:-23px;
+        left:75px;
     }
 
     .ship-left {
@@ -207,13 +222,6 @@ main {
         border-right:solid 3.8em transparent;
         border-top:solid 295px rgb(184, 202, 184);
         right:-59px;
-    }
-    
-    .ship-bottom {
-        border-left: solid 9em transparent;
-        border-right: solid 9em transparent;
-        bottom:-23px;
-        left:75px;
     }
 }
 
@@ -234,8 +242,22 @@ main {
         letter-spacing: 12px;
     }
 
+    .lose {
+        font-size:28px;
+        height:275px;
+        margin-top:55px;
+        width:350px;
+    }
+
     .puzzle {
         max-height:350px;
+    }
+    
+    .ship-bottom {
+        border-left: solid 7em transparent;
+        border-right: solid 7em transparent;
+        bottom:-22px;
+        left:68px;
     }
 
     .ship-left {
@@ -248,13 +270,6 @@ main {
         border-right:solid 3em transparent;
         border-top:solid 250px rgb(184, 202, 184);
         right:-47px;
-    }
-
-    .ship-bottom {
-        border-left: solid 7em transparent;
-        border-right: solid 7em transparent;
-        bottom:-22px;
-        left:68px;
     }
 }
 
