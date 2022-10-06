@@ -1,6 +1,7 @@
 # Lost-Treasure
-A simple JavaScript game.
+A JavaScript game. <br>
+I added the CSS design and JavaScript. <br>
+<a href="https://lost-treasure.pages.dev/">Lost Treasure</a> <br> 
 
-<a href="https://lost-treasure.pages.dev/">Lost Treasure</a> <br>
-The idea of this project was forked. <br>
-I added the design, and javascript.
+The original idea for this project was forked from collaborator: <br>
+<a href="https://github.com/AdityaChaudhary3">Aditya</a> 
