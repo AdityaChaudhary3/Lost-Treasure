@@ -1,5 +1,5 @@
 # Lost-Treasure
-It just a start with JavaScript. A very simple game.
+A simple JavaScript game.
 
 <a href="https://lost-treasure.pages.dev/">Lost Treasure</a> <br>
 The idea of this project was forked. <br>
