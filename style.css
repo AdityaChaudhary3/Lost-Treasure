@@ -56,6 +56,45 @@ h1, .chest, .ship {
     transform-origin: 50% 100%;
 }
 
+.win, .lose {
+    align-items: center;
+    display:flex;
+    font-weight: bolder;
+    justify-content: center;
+    position: absolute;
+    z-index:1;
+}
+
+.lose {
+    background:linear-gradient(180deg, transparent, #B2936C 3%, transparent 30%, tan, transparent 70%, #B2936C 97%, transparent),
+    repeating-linear-gradient(180deg,tan, tan 9.6%, #23001E 10%, tan 10.4%);
+    border-radius: 10px;
+    color: paleturquoise;
+    font-family: "chelsea market";
+    font-size:45px;
+    height:365px;
+    margin-top:150px;
+    text-shadow: 0px 0px 5px navy;
+    width:500px;
+}
+
+.win {
+    background-image: url("img/treasure.jpeg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:gold;
+    font-family: "snell roundhand", "luminari";
+    font-size:50px;
+    min-height: 100vh;
+    min-width:100vw;
+    text-shadow: 0px 0px 5px black;
+}
+
+.hide {
+    visibility:hidden;
+}
+
 main {
     align-items: center;
     clear:both;
