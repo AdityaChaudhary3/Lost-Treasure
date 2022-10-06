@@ -18,6 +18,7 @@ box7.onclick = function() { selection(7) };
 box8.onclick = function() { selection(8) };
 box9.onclick = function() { selection(9) };
 
+//this is where the treasure is hidden
 let treasure = randomRange(1,9);
 
 //Returns a random number within a chosen range
@@ -28,7 +29,7 @@ function randomRange(min, max) {
 //Math.random() returns a random decimal between 0 - 0.99
 }
 
-
+//pick stores and compares the user's treasure selection
 function selection(pick) { 
     
     let lose = document.querySelector(".lose");
@@ -36,14 +37,13 @@ function selection(pick) {
 
     if (pick == treasure) {
 
-        win.classList.remove("hide");
-        setTimeout(function() { win.classList.add("hide") }, 15000);
-        treasure = randomRange(1,9);
+        win.classList.remove("hide"); //shows message
+        setTimeout(function() { win.classList.add("hide") }, 15000); //Gives time to celebrate, hides again
+        treasure = randomRange(1,9); //after win asigns a different random number to treasure
 
     } else {
-        
-        lose.classList.remove("hide");
-        setTimeout(function() { lose.classList.add("hide") }, 2500 );
+        lose.classList.remove("hide"); //shows message
+        setTimeout(function() { lose.classList.add("hide") }, 2500 ); //hides again
     }
 
 }
