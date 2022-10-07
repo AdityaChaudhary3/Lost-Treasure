@@ -34,6 +34,7 @@ function selection(pick) {
     
     let lose = document.querySelector(".lose");
     let win = document.querySelector(".win");
+    let ocean = new Audio("assets/ocean.mp3");
     let open = new Audio("assets/open-chest.mp3");
     let treasureChest = new Audio("assets/treasure-chest.mp3");
 
@@ -47,8 +48,9 @@ function selection(pick) {
     } else {
         open.play();
         lose.classList.remove("hide"); //shows message
-        setTimeout(function() { lose.classList.add("hide") }, 2500 ); //hides again
+        setTimeout(function() { 
+            lose.classList.add("hide");
+            ocean.play(); 
+        }, 2500 ); //hides again
     }
 }
-
-    
