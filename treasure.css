@@ -69,8 +69,8 @@ h1, .chest, .lose, .ship {
     font-size:45px;
     height:365px;
     margin-top:150px;
-    text-shadow: 0px 0px 5px navy;
-    transition: 5s ease-in-out 500ms;
+    text-shadow: 0px 0px 5px #23001E;
+    transition: 5s ease-in-out 550ms;
     width:500px;
 }
 
@@ -148,7 +148,7 @@ main {
 }
 
 .win {
-    background-image: url("img/treasure.jpeg") ;
+    background-image: url("assets/treasure.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
