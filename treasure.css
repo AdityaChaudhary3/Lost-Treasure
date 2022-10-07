@@ -1,6 +1,10 @@
 a {
+    position: absolute;
+    bottom: -60px;
     color: paleturquoise;
+    font-family: "raleway", "roboto", "press start 2p";
     text-decoration: none;
+    z-index: 1;
 }
 
 body {
@@ -37,13 +41,6 @@ body {
     repeating-linear-gradient(180deg,
     tan, tan 9.6%, black 10%, tan 10.4%);
     text-shadow:0px 0px 2px darkgoldenrod;
-}
-
-footer { 
-    background-color: darkturquoise;
-    font-family: "raleway", "roboto", "press start 2p";
-    padding:10px 0;
-    text-align: center;
 }
 
 h1 {
@@ -102,7 +99,7 @@ main {
     bisque 20%, turquoise 50%, turquoise 83%, mediumturquoise 93%, darkturquoise 98%);
     flex-direction: column;
     height: 100vh;
-    min-height: 665px;
+    min-height: 700px;
     min-width: 100vw;
     justify-content: center;
     text-align: center;
