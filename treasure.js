@@ -34,20 +34,21 @@ function selection(pick) {
     
     let lose = document.querySelector(".lose");
     let win = document.querySelector(".win");
+    let open = new Audio("assets/open-chest.mp3");
+    let treasureChest = new Audio("assets/treasure-chest.mp3");
 
     if (pick == treasure) {
 
+        treasureChest.play();
         win.classList.remove("hide"); //shows message
         setTimeout(function() { win.classList.add("hide") }, 15000); //Gives time to celebrate, hides again
         treasure = randomRange(1,9); //after win asigns a different random number to treasure
 
     } else {
+        open.play();
         lose.classList.remove("hide"); //shows message
         setTimeout(function() { lose.classList.add("hide") }, 2500 ); //hides again
     }
-
 }
 
-
-
-
+    
