@@ -39,7 +39,6 @@ function selection(pick) {
     let treasureChest = new Audio("assets/treasure-chest.mp3");
 
     if (pick == treasure) {
-
         treasureChest.play();
         win.classList.remove("hide"); //shows message
         setTimeout(function() { win.classList.add("hide") }, 15000); //Gives time to celebrate, hides again
@@ -50,7 +49,7 @@ function selection(pick) {
         lose.classList.remove("hide"); //shows message
         setTimeout(function() { 
             lose.classList.add("hide");
-            ocean.play(); 
+            ocean.play();
         }, 2500 ); //hides again
     }
 }
