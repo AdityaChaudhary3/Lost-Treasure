@@ -69,11 +69,11 @@ h1, .chest, .lose, .ship {
     background:linear-gradient(180deg, transparent, #B2936C 3%, transparent 30%, tan, transparent 70%, #B2936C 97%, transparent),
     repeating-linear-gradient(180deg,tan, tan 9.6%, #23001E 10%, tan 10.4%);
     border-radius: 10px;
-    color: paleturquoise;
+    color: #23001E;
     font-family: "chelsea market";
     font-size:45px;
     height:370px;
-    text-shadow: 0px 0px 5px #23001E;
+    text-shadow: 0px 0px 2px bisque;
     transition: 5s ease-in-out 550ms;
     width:480px;
 }
