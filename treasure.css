@@ -1,10 +1,6 @@
 a {
-    position: absolute;
-    bottom: -60px;
-    color: paleturquoise;
-    font-family: "raleway", "roboto", "press start 2p";
+    color: #23001E;
     text-decoration: none;
-    z-index: 1;
 }
 
 body {
