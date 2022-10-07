@@ -5,32 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google fonts: Chelsea Market, Raleway, Press Start 2P, Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Press+Start+2P&family=Raleway:wght@500&family=Roboto:wght@400&display=swap" >
+      
     <title>Find the treasure</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="treasure.css">
 </head>
 
 <body>
-    <nav class="main">
-        <ul>
-            <li>LOST TREASURE</li>
-            <!-- <li>About</li> -->
-            <!-- <li>Contect</li> -->
-        </ul>
-    </nav>
-    <div class="container">
-        <div class="puzzle">
-            <button id="Box1"><div>Mystery Box 1</div></button>
-            <button id="Box2"><div>Mystery Box 2</div></button>
-            <button id="Box3"><div>Mystery Box 3</div></button>
-            <button id="Box4"><div>Mystery Box 4</div></button>
-            <button id="Box5"><div>Mystery Box 5</div></button>
-            <button id="Box6"><div>Mystery Box 6</div></button>
-            <button id="Box7"><div>Mystery Box 7</div></button>
-            <button id="Box8"><div>Mystery Box 8</div></button>
-            <button id="Box9"><div>Mystery Box 9</div></button>
+
+    <main>
+
+        <h1>
+            <a href="https://dany-cervantes-portfolio.pages.dev/" target="_blank">
+                LOST TREASURE
+            </a>
+        </h1>
+
+        <div class="ship">
+            <div class="ship-left"></div>
+            <div class="puzzle">
+                <div class="chest" id="1">Mystery <br> Box 1</div>
+                <div class="chest" id="2">Mystery <br> Box 2</div>
+                <div class="chest" id="3">Mystery <br> Box 3</div>
+                <div class="chest" id="4">Mystery <br> Box 4</div>
+                <div class="chest" id="5">Mystery <br> Box 5</div>
+                <div class="chest" id="6">Mystery <br> Box 6</div>
+                <div class="chest" id="7">Mystery <br> Box 7</div>
+                <div class="chest" id="8">Mystery <br> Box 8</div>
+                <div class="chest" id="9">Mystery <br> Box 9</div>
+                <div class="lose hide ">
+                    The Treasure is Lost <br>
+                    Keep Looking . . .
+                </div>
+            </div>
+            <div class="ship-right"></div>
+            <div class="ship-bottom"></div>
         </div>
-    </div>
-    <script src="script.js"></script>
+        
+        <div class="win hide">
+            Hooray! <br>
+            You Found <br> 
+            The Treasure!
+        </div>
+
+    </main>
+
+    <script src="treasure.js"></script>
 </body>
 
 </html>

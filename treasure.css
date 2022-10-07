@@ -1,0 +1,276 @@
+a {
+    color: #23001E;
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    margin:0;
+    width: 100%;
+}
+
+.chest {
+    align-self: center;
+    background: linear-gradient(180deg, 
+    bisque 0.1%, transparent 20%, transparent 40%, saddlebrown 41%, black 42%, saddlebrown 42.5%, transparent 43%, transparent 80%, #B2936C 99.5%),
+    repeating-linear-gradient(180deg,
+    tan, tan 9.6%, black 10%, tan 10.4%);
+    border-radius:3px;
+    box-shadow: 0px 0px 3px 0.5px #23001E;
+    color: gold;
+    cursor: pointer;
+    font-family: "cochin";
+    font-size:20px;
+    font-weight:bolder;
+    justify-self: center;
+    margin:12px;
+    padding:25px 30px;
+    text-align: center;
+    text-shadow:0px 0px 2px #23001E;
+    transition: 5s ease-in-out 1000ms;
+}
+
+.chest:hover {
+    text-shadow:0px 0px 2px gold;
+    background: linear-gradient(180deg,
+    bisque 0.1%, transparent 10%, goldenrod 30%, saddlebrown 31%, black 32%, gold 40%, gold 43%, goldenrod 48%, transparent 82%, transparent 90%, #B2936C 99.5%),
+    repeating-linear-gradient(180deg,
+    tan, tan 9.6%, black 10%, tan 10.4%);
+    text-shadow:0px 0px 2px darkgoldenrod;
+}
+
+h1 {
+    background-color:#D7CABC;
+    box-shadow: 0px 0px 5px 0.5px #23001E;
+    color: #23001E;
+    font-family: "chelsea market";
+    font-size:18px;
+    letter-spacing: 15px;
+    padding:10px 15px;
+    min-width:280px;
+    position:absolute;
+    top:3rem;
+    transition: 5s ease-in-out 1000ms;
+}
+
+h1, .chest, .lose, .ship {
+    animation-name:wobble;
+    animation-duration:15s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: 50% 100%;
+}
+
+.hide {
+    visibility:hidden;
+}
+
+.lose {
+    background:linear-gradient(180deg, transparent, #B2936C 3%, transparent 30%, tan, transparent 70%, #B2936C 97%, transparent),
+    repeating-linear-gradient(180deg,tan, tan 9.6%, #23001E 10%, tan 10.4%);
+    border-radius: 10px;
+    color: #23001E;
+    font-family: "chelsea market";
+    font-size:45px;
+    height:370px;
+    text-shadow: 0px 0px 2px bisque;
+    transition: 5s ease-in-out 550ms;
+    width:480px;
+}
+
+.lose, .win {
+    align-items: center;
+    display:flex;
+    font-weight: bolder;
+    justify-content: center;
+    position: absolute;
+    z-index:1;
+}
+
+main {
+    align-items: center;
+    clear:both;
+    display: flex;
+    background: linear-gradient(180deg, 
+    bisque 20%, turquoise 50%, turquoise 83%, mediumturquoise 93%, darkturquoise 98%);
+    flex-direction: column;
+    height: 100vh;
+    min-height: 700px;
+    min-width: 100vw;
+    justify-content: center;
+    text-align: center;
+}
+
+.puzzle {
+    background:linear-gradient(180deg, rgb(184, 202, 184) 85%, rgb(157, 175, 157));
+    border-radius: 0px 0px 60px 60px;
+    display:grid;
+    gap:5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding:12px;
+    margin-top:50px;
+    max-height: 400px;
+}
+
+.ship {
+    position:absolute;
+    top:10rem;
+}
+
+.ship-bottom {
+    border-top: solid 1.5em rgb(157, 175, 157);
+    border-left: solid 10em transparent;
+    border-right: solid 10em transparent;
+    height:0;
+    position:absolute;
+    bottom: -24px;
+    left:85px;
+    transition: 5s ease-in-out 1000ms;
+}
+
+.ship-left {
+    border-left:solid 5em transparent;
+    border-top:solid 350px rgb(184, 202, 184);
+    border-radius: 10px 0px 0px 0px;
+    height:0;
+    left:-78px;
+    top:50px;
+    position:absolute;
+    transition: 5s ease-in-out 1000ms;
+}
+
+.ship-right {
+    border-radius: 0px 10px 0px 0px;
+    border-right:solid 5em transparent;
+    border-top:solid 350px rgb(184, 202, 184);
+    height:0;
+    right:-78px;
+    top:50px;
+    position:absolute;
+    transition: 5s ease-in-out 1000ms;
+}
+
+.win {
+    background-image: url("assets/treasure.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:gold;
+    font-family: "snell roundhand", "luminari";
+    font-size:50px;
+    min-height: 100vh;
+    min-width:100vw;
+    text-shadow: 0px 0px 5px goldenrod;
+}
+
+
+@keyframes wobble {
+
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform:rotate(2deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+@media (max-width: 1000px) {
+
+    .chest {
+        font-size: 18px;
+        padding: 20px 25px;
+        margin: 10px
+    }
+
+    h1 {
+        font-size:17px;
+        letter-spacing: 14px;
+    }
+    
+    .lose {
+        font-size:40px;
+        height:315px;
+        width:415px;
+    }
+
+    .puzzle {
+        max-height:375px;
+    }
+    
+    .ship-bottom {
+        border-left: solid 9em transparent;
+        border-right: solid 9em transparent;
+        bottom:-23px;
+        left:75px;
+    }
+
+    .ship-left {
+        border-left:solid 3.8em transparent;
+        border-top:solid 295px rgb(184, 202, 184);
+        left:-59px;
+    }
+
+    .ship-right {
+        border-right:solid 3.8em transparent;
+        border-top:solid 295px rgb(184, 202, 184);
+        right:-59px;
+    }
+}
+
+@media (max-width: 585px) {
+
+    body {
+        overflow: clip;
+    }
+
+    .chest {
+        font-size: 16px;
+        padding: 18px;
+        margin:8px;
+    }
+    
+    h1 {
+        font-size:16px;
+        letter-spacing: 12px;
+    }
+
+    .lose {
+        font-size:28px;
+        height:280px;
+        width:350px;
+    }
+
+    .puzzle {
+        max-height:350px;
+    }
+    
+    .ship-bottom {
+        border-left: solid 7em transparent;
+        border-right: solid 7em transparent;
+        bottom:-22px;
+        left:68px;
+    }
+
+    .ship-left {
+        border-left:solid 3em transparent;
+        border-top:solid 250px rgb(184, 202, 184);
+        left:-47px;
+    }
+
+    .ship-right {
+        border-right:solid 3em transparent;
+        border-top:solid 250px rgb(184, 202, 184);
+        right:-47px;
+    }
+}
