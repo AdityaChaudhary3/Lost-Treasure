@@ -67,11 +67,10 @@ h1, .chest, .lose, .ship {
     color: paleturquoise;
     font-family: "chelsea market";
     font-size:45px;
-    height:365px;
-    margin-top:150px;
+    height:370px;
     text-shadow: 0px 0px 5px #23001E;
     transition: 5s ease-in-out 550ms;
-    width:500px;
+    width:480px;
 }
 
 .lose, .win {
@@ -196,9 +195,8 @@ main {
     
     .lose {
         font-size:40px;
-        height:325px;
-        margin-top:100px;
-        width:425px;
+        height:315px;
+        width:415px;
     }
 
     .puzzle {
@@ -244,8 +242,7 @@ main {
 
     .lose {
         font-size:28px;
-        height:275px;
-        margin-top:0px;
+        height:280px;
         width:350px;
     }
 
