@@ -50,6 +50,6 @@ function selection(pick) {
         setTimeout(function() { 
             lose.classList.add("hide");
             ocean.play();
-        }, 2500 ); //hides again
+        }, 1500 ); //hides again
     }
 }
